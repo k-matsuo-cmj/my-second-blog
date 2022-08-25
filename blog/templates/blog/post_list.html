@@ -10,7 +10,7 @@
             <a href="{% url 'post_detail' pk=post.pk %}">
                 {{ post.title }}
             </a>
-            <small>Comments: {{ post.comments.count }}</small>
+            <small>Comments: {{ post.approved_comments.count }}</small>
         </h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
